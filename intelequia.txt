@@ -1,0 +1,99 @@
+Cómo subir un proyecto a un repositorio de GitHub:
+
+Cómo crear un repositorio en GitHub: 
+Para ello, hay crear un repositorio en GitHub donde alojarlo siguiendo estos pasos: 
+
+1 Utiliza el menú desplegable de la esquina superior derecha de cualquier página  y selecciona 
+Nuevo Repositorio.
+2 Escribe un nombre para el repositorio. También puedes añadir una descripción al mismo. 
+3 Elige la visibilidad del repositorio: público, interno o privado. 
+
+4 Selecciona Inicializar este repositorio con un README, que contendrá la información del proyecto 
+y puede editarse en cualquier momento. 
+5 Haz clic en Crear repositorio. 
+
+Cómo subir el código de un proyecto al repositorio de GitHub:
+En la parte inferior del repositorio se visualizará el contenido del README (es conveniente crearlo 
+y darle unos estilos adecuados), además de instrucciones sobre cómo funciona el programa, aplicación 
+o herramienta y cómo ponerlo en marcha. 
+
+Para subir un código previamente creado hay que hacer lo siguiente: 
+
+1. Abre la terminal en la carpeta donde se alojan los ficheros fuente y escribe el siguiente 
+código para iniciar git en dicha carpeta: 
+
+git init 
+
+2. Se habrá creado la carpeta .git con la información del proyecto. Añade los ficheros para subir 
+el mismo con este comando: 
+
+git add 
+
+Otra forma de añadir un único fichero es introduciendo el comando siguiente: 
+
+git add nombrdelfichero 
+
+ 
+
+3. Prepara los ficheros que quieres subir con una pequeña explicación acerca de los cambios: 
+
+ 
+
+git commit -m “Creado el proyecto inicial” 
+
+ 
+
+4. Debes subir los cambios a GitHub. Para ello tienes que saber la ruta del repositorio (acabada en .git) que está en Clone or Download, el botón verde de la página del proyecto. Luego añade el repositorio desde la terminal con este comando: 
+
+ 
+
+git remote add origin URLrepositorio.git 
+
+ 
+
+5. Sube los cambios con el siguiente comando: 
+
+ 
+
+git push origin master 
+
+
+
+ Si has seguido estos pasos, los cambios aparecerán en la página del proyecto, ¿fácil verdad?
+
+ 
+
+
+
+
+
+Cómo subir un proyecto local a GitHub desde Visual Studio Code:
+ 
+
+Microsoft tuvo la genial idea de integrar GitHub en su entorno de desarrollo para que los desarrolladores pudieran subir sus proyectos sin problemas desde Visual Studio Code. Para ello hay que hacer lo siguiente: 
+
+ 
+
+Conéctate a GitHub desde Visual Studio Code yendo a la sección Team Explorer, luego haz clic en Administrador de conexiones y después en Sign in. 
+
+Introduce tu usuario y contraseña de GitHub. 
+
+Si no lo has hecho antes, crea un repositorio para tu espacio de trabajo como viste previamente. 
+
+Añade tu proyecto haciendo doble clic en el repositorio. 
+
+Copia la solución del proyecto a la ruta del espacio de trabajo. 
+
+Haz clic en Cambios y verás una lista que muestra los archivos que se incluirán en el repositorio. 
+
+Añade una descripción sobre los cambios y haz clic en Commit All. 
+
+Sincroniza los cambios con GitHub para subir los archivos a dicha plataforma haciendo clic en Sync al aparecer el mensaje de confirmación de Commit. 
+
+Presiona el botón Push para que inicie el proceso y verás un mensaje que confirma la publicación del proyecto en el repositorio. 
+
+Entra en la web de GitHub y accede a tu cuenta para verificar si el proyecto se ha subido correctamente. 
+
+ 
+
+Si has seguido estos pasos, tu proyecto se habrá subido correctamente a GitHub. 
